@@ -14,9 +14,9 @@ export default function Content() {
     },
   });
 
-  if (query.isLoading) return <h2 className="text-center">Loading....</h2>;
+  if (query.isLoading) return <h2 className="text-center my-3">Loading....</h2>;
   if (query.isError)
-    return <h2 className="text-center">Error loading data!!!</h2>;
+    return <h2 className="text-center my-3">Error loading data!!!</h2>;
 
   return (
     <>
@@ -24,6 +24,7 @@ export default function Content() {
       <div className="d-flex flex-wrap justify-content-center">
         {query.data.map((item) => (
           <Items
+            id={item.id}
             key={item.id}
             title={item.title}
             image={item.image}

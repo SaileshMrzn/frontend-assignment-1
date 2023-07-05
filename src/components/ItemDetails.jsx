@@ -26,9 +26,8 @@ export default function ItemDetails() {
   if (!item) return <h2 className="text-center my-3">Loading...</h2>;
 
   return (
-    <div className="my-3 mx-3">
-      <div></div>
-      <div className="d-flex">
+    <>
+      <div className="d-flex mx-5">
         <img src={item.image} alt="" className="h-25 w-25 my-5" />
         <div className="d-flex flex-column itemDetails mx-5">
           <h2 className="py-3">{item.title}</h2>
@@ -40,6 +39,6 @@ export default function ItemDetails() {
           <p>Rating: {item.rating.rate}</p>
         </div>
       </div>
-    </div>
+    </>
   );
 }

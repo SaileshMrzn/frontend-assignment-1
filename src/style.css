@@ -16,11 +16,12 @@
 }
 
 #searchProducts {
-  width: 20rem;
-  padding: 5px 10px;
+  width: 23rem;
+  padding: 8px 20px;
   border-radius: 5px;
   border: 1px solid #ccc;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: relative;
 }
 
 #searchProducts:focus {
@@ -28,21 +29,13 @@
   border: 1px solid #000;
 }
 
-#searchButton {
-  padding: 5px 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  margin: 0 5px;
-}
-
-#searchButton:hover {
-  cursor: pointer;
-  background-color: #e15f97;
-  color: white;
-  transition: all 0.25s ease-in-out;
-}
-
 .itemDetails {
   width: 30%;
   margin: 1rem 2rem;
+}
+
+.itemDetailsContainer {
+  height: 90vh;
+  display: flex;
+  align-items: center;
 }

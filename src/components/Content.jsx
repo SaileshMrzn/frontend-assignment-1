@@ -9,7 +9,6 @@ export default function Content() {
     queryFn: async () => {
       const response = await axios.get("https://fakestoreapi.com/products");
       const data = await response.data;
-      console.log(data);
       return data;
     },
   });

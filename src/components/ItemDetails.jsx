@@ -27,9 +27,11 @@ export default function ItemDetails() {
 
   return (
     <>
-      <div className="d-flex mx-5">
-        <img src={item.image} alt="" className="h-25 w-25 my-5" />
-        <div className="d-flex flex-column itemDetails mx-5">
+      <div className="d-flex mx-3 flex-wrap">
+        <div className="h-100 w-100 text-center">
+          <img src={item.image} alt="" className="h-25 w-25 my-5 text-center" />
+        </div>
+        <div className="d-flex flex-column itemDetails w-100 flex-wrap">
           <h2 className="py-3">{item.title}</h2>
           <p>${item.price}</p>
           <p>
